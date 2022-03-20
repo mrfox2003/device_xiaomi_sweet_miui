@@ -86,3 +86,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.ims.disableDebugLogs=1 \
 	persist.vendor.ims.disableIMSLogs=1 \
 	persist.vendor.ims.disableQXDMLogs=1
+
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.sf.blurs_are_expensive=1
+        ro.surface_flinger.supports_background_blur=1
+
+# ADB props
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.secure=1 
+        ro.debuggable=0
