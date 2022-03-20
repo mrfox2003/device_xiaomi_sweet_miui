@@ -2,6 +2,7 @@
 rm -rf hardware/qcom-caf/sm8150/display 
 rm -rf hardware/qcom-caf/sm8150/audio
 rm -rf hardware/qcom-caf/sm8150/media
+rm -rf packages/resources/devicesettings
 
 # Hals
 git clone https://github.com/ArrowOS/android_hardware_qcom_audio -b arrow-12.0-caf-sm8150 hardware/qcom-caf/sm8150/audio 
@@ -17,3 +18,6 @@ git clone -b master --depth=1 https://github.com/kdrag0n/proton-clang.git prebui
 
 # ANX Camera
 git clone https://gitlab.com/basamaryan/proprietary_vendor_anxcamera vendor/ANXCamera
+
+# Devicesettings
+git clone https://github.com/PixelExperience/packages_resources_devicesettings.git -b twelve packages/resources/devicesettings
